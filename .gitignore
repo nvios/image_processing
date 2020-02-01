@@ -1,0 +1,5 @@
+__pycache__
+credentials.json
+brick_quantity_log.csv
+update_pipeline.py
+update_pipeline.pyc
