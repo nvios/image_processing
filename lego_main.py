@@ -377,3 +377,15 @@ def color_count_printer(image, palette_mode, out_path):
             instructions.write (f'Color {color}: {color_count[i]} bricks\n')
     log_file.to_csv('brick_quantity_log.csv')
     instructions.close()
+    
+# =================  APPLY LEGO EFFECT  ================= #    
+    
+def legofy(thumbnail_image, brick_image, destination):
+    destination = os.path.join(destination, 'lego_' + os.path.basename(thumbnail_image))
+    print(destination)
+    image = Image.open(thumbnail_image)
+    brick = Image.open(brick_image)
+    final_image = make_lego_image(image, brick)
+    final_image.save(destination)
+        
+    

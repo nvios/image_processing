@@ -9,8 +9,8 @@ from PIL import Image
 #==============================================================#
 
 largest_dimension = 64
-palettes = ['bw', 'portrait', 'nsolid']
-factor = 1
+palettes = ['art', 'portrait', 'solid']
+factor = 0.5
 
 #==============================================================#
 #            DANGER ZONE, DO NOT TRY THIS AT HOME              #

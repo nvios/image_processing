@@ -102,11 +102,3 @@ def main():
     if finalize_ == 1:
         finalize()
 main()
-
-file = 'eye.png'
-instructions_folder_path = os.path.join(instructions, os.path.splitext(file)[0])
-image = Image.open(f'{processed_files}/eye.png')
-brick_image_path = os.path.join(os.path.dirname(__file__), 'lego', 'assets', 'bricks', '1x1.png')
-brick_image = Image.open(brick_image_path)
-lego_effect_preview = f'{instructions_folder_path}/Result_preview_{file}'
-lego.make_lego_image(image, brick_image).save(lego_effect_preview)
